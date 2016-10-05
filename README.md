@@ -19,6 +19,8 @@ sample_database.sql
 
 edit and copy or rename .env.example to .env
 
+edit accordingly config/database.php 
+
 write permissions necessary to be set eventually for directories
 
 public/images/books, storage/
