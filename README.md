@@ -13,9 +13,8 @@ composer update
 
 # Important
 
-edit and rename .env.example
+edit and copy or rename .env.example to .env
 
 write permissions necessary to be set eventually for directories
 
-public/images/books
-storage/
+public/images/books, storage/
