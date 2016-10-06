@@ -131,12 +131,12 @@ class BookController extends Controller
     }
 
     /**
-     * Find search in Book
+     * Show and search in Book
      *
      * @param  App\Http\Requests\SearchRequest $request
      * @return Response
      */
-    public function show(SearchRequest $request)
+    public function searchIndex(SearchRequest $request)
     {
         $search = $request->input('search');
 

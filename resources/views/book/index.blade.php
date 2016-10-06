@@ -13,7 +13,7 @@
 <div class="col-lg-10 col-lg-offset-1">
  
     <div class="pull-right">
-        <form method="POST" action="{{ URL::to('/books/show') }}">
+        <form method="POST" action="{{ URL::to('/books/search') }}">
             {{ csrf_field() }}
             <input type="submit" name="Search" value="Search" class="btn btn-info"/>        
             <input type="text" name="search" value="{{ $search }}" >

@@ -11,7 +11,7 @@
 <div class="col-lg-10 col-lg-offset-1">
  
     <div class="pull-right">
-        <form method="POST" action="<?php echo e(URL::to('/books/show')); ?>">
+        <form method="POST" action="<?php echo e(URL::to('/books/search')); ?>">
             <?php echo e(csrf_field()); ?>
 
             <input type="submit" name="Search" value="Search" class="btn btn-info"/>        

@@ -16,8 +16,10 @@ Route::group(['middleware' => ['web']], function () {
     });
 
     Route::resource('/authors', 'AuthorController');
+    
+    Route::get('/books/search', 'BookController@searchIndex');
+    Route::post('/books/search', 'BookController@searchIndex');    
     Route::resource('/books', 'BookController');
-    Route::post('/books/show', 'BookController@show');
 
 
     //Auth::routes();
