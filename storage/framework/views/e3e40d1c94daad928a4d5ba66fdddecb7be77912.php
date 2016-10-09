@@ -12,7 +12,7 @@
     <?php echo e(Form::open(['role' => 'form', 'url' => '/books', 'files' => 'true'])); ?>
 
 
-    <div class='form-group <?php if($errors->has('name')): ?> has-error <?php endif; ?>'>
+    <div class='form-group <?php if($errors->has('title')): ?> has-error <?php endif; ?>'>
         <?php echo e(Form::label('title', 'Book title')); ?>
 
         <?php echo e(Form::text('title', null, ['placeholder' => 'Book title', 'class' => 'form-control'])); ?>
@@ -47,7 +47,7 @@
         </select>
     </div>
 
-    <div class='form-group'>
+    <div class='form-group  <?php if($errors->has('image')): ?> has-error <?php endif; ?>'>
         <?php echo e(Form::label('image', 'Image')); ?>
 
         <?php echo e(Form::file('image', array('class' => 'form-control'))); ?>    
