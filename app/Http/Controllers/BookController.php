@@ -127,8 +127,19 @@ class BookController extends Controller
 
         $this->item_repo->destroy($item);
 
-        return redirect('authors')->with('ok', 'Book Deleted');      
+        return redirect('books')->with('ok', 'Book Deleted');      
     }
+
+    /**
+     * Show  Book
+     *
+     * @param  App\Http\Requests\SearchRequest $request
+     * @return Response
+     */
+    public function show()
+    {
+        return redirect('books'); 
+    }  
 
     /**
      * Show and search in Book

@@ -13,7 +13,7 @@
 
     {{ Form::open(['role' => 'form', 'url' => '/books', 'files' => 'true']) }}
 
-    <div class='form-group @if ($errors->has('name')) has-error @endif'>
+    <div class='form-group @if ($errors->has('title')) has-error @endif'>
         {{ Form::label('title', 'Book title') }}
         {{ Form::text('title', null, ['placeholder' => 'Book title', 'class' => 'form-control']) }}
         @if ($errors->has('title'))
@@ -41,7 +41,7 @@
         </select>
     </div>
 
-    <div class='form-group'>
+    <div class='form-group  @if ($errors->has('image')) has-error @endif'>
         {{ Form::label('image', 'Image') }}
         {{ Form::file('image', array('class' => 'form-control')) }}    
         @if ($errors->has('image'))

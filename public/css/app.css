@@ -1,10 +1,7 @@
-.thumb{
-	max-width: 200px;
-	height: auto;
-}
-.dropdown-menu i {
-	padding-right: 10px; 
-}
+.top-buffer { margin-top:20px; }
+.thumb{ max-width: 200px; height: auto;}
+.dropdown-menu i {padding-right: 10px; }
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)

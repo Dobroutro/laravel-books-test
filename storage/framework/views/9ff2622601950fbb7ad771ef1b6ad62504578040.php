@@ -62,7 +62,7 @@
                                     <a href="<?php echo e(url('/logout')); ?>"
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
-                                        Logout
+                                        <i class="fa fa-lock"></i>Logout
                                     </a>
 
                                     <form id="logout-form" action="<?php echo e(url('/logout')); ?>" method="POST" style="display: none;">

@@ -6,80 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Error 404</title>
 
+    <!-- Styles -->
+    <link href="/css/app.css" rel="stylesheet">
 
-
-    <style type="text/css">
-      a,
-      a:focus,
-      a:hover {
-        color: #fff;
-      }
-
-      .btn-default,
-      .btn-default:hover,
-      .btn-default:focus {
-        color: #333;
-        text-shadow: none;
-        background-color: #fff;
-        border: 1px solid #fff;
-      }
-
-      html,
-      body {
-        height: 90%;
-        background-color: #333;
-      }
-      body {
-        color: #fff;
-        text-align: center;
-        text-shadow: 0 1px 3px rgba(0,0,0,.5);
-      }
-
-      .site-wrapper {
-        display: table;
-        width: 100%;
-        height: 90%; /* For at least Firefox */
-        min-height: 90%;
-        -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-                box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-      }
-      .site-wrapper-inner {
-        display: table-cell;
-        vertical-align: top;
-      }
-      .cover-container {
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .btn-lg {
-        padding: 10px 20px;
-        font-weight: bold;
-        text-decoration: none;
-      }
-
-    </style>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">     
   </head>
 
   <body>
 
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div>
-            <h1 >Page not found</h1>
-            <p>
-              <a href="{{ url('/home') }}" class="btn btn-lg btn-default">Home</a>
-            </p>
-          </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="error-template text-center">
+                    <h1 class="top-buffer">
+                        Oops!</h1>
+                    <h2 class="top-buffer">
+                        404 Not Found</h2>
+                    <div class="error-details top-buffer">
+                        Sorry, an error has occured, Requested page not found!
+                    </div>
+                    <div class="error-actions top-buffer">
+                        <a href="{{ url('/books') }}" class="btn btn-primary btn-lg">
+                          <span class="fa fa-home"></span>
+                          Take Me Home 
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </div>
-
     </div>
-
 
   </body>
 </html>

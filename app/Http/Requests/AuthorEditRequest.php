@@ -11,7 +11,7 @@ class AuthorEditRequest extends Request {
     public function rules()
     {
         return [
-            'name' => 'required|max:255',
+            'name' => 'required|max:255|unique:authors,name,'.$this->segment(2).',id',
             'note' => 'max:500'
         ];
     }
