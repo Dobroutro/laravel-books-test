@@ -29,4 +29,6 @@ public/images/books, storage/
 admin@test.com:aaaaaa
 
 # Added Sample PHP Unit tests 
-phpunit 
+In project's directory execute:
+
+phpunit
