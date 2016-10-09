@@ -1,12 +1,11 @@
 # laravel-books-test
-Test Sample Project With Laravel
-
+Test List Related Tables Project With Laravel
 
 # Installation 
 
-git clone https://github.com/Dobroutro/laravel-books-test.git books 
+git clone https://github.com/Dobroutro/laravel-books-test.git some_directory 
 
-cd /books
+cd /some_directory
 
 composer update
 
@@ -28,3 +27,6 @@ public/images/books, storage/
 
 # Sample Login User
 admin@test.com:aaaaaa
+
+# Added Sample PHP Unit tests 
+phpunit 
